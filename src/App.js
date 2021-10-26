@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
+import './App.scss';
+
+
+
+import { BrowserRouter } from 'react-router-dom';
+import HelmetLBN from './components/helmetLBN';
+import Header from './components/header';
+import Footer from './components/footer';
+import Bubble from './components/bubble';
+import CarouselHome from './components/carousel';
+import Specialties from './components/specialties';
+import Technology from './components/technology';
+import Team from './components/team';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app" className="App">
+      <BrowserRouter>
+
+        <HelmetLBN/>
+      
+        <Header/>
+        <CarouselHome/>
+        
+        <main className="container"> 
+          <Specialties/>
+          <Technology/>
+          <Team/>
+        </main>
+        
+        <Footer/>
+        <Bubble/>
+      
+      </BrowserRouter>
     </div>
   );
 }

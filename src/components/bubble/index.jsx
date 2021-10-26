@@ -1,4 +1,29 @@
+import $ from 'jquery'
+import { useEffect } from 'react'
+
 const Bubble = () => {
+
+    useEffect(() => {
+        $('#flotante').hide()
+
+        
+        // WA button toggle
+        $(window).scroll(function(){
+            if($(window).scrollTop() > 568){
+            $('#flotante').show("slow")
+            } else {
+            $('#flotante').hide("slow")
+            }
+        });
+
+        $('.whatsApp-link').click(function(e){
+            e.preventDefault()
+            $('#whatsAppModal').modal('show');
+          })
+        
+    }, [])
+
+
 return (
     <a className="whatsApp-link" id="flotante"
         href="https://api.whatsapp.com/send?phone=5491167485220&text=&source=&data=&app_absent=">

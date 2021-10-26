@@ -22,73 +22,89 @@ module.exports = {
     }
   ],
 
-  // treatmentsList = [
-  //   "caries" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "limpieza ultrasónica" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "exodoncias" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "blanqueamientos" = [
-  //     "text" = "La técnica de blanqueamiento combinado realizada en nuestro consultorio permite el clareamiento dental de hasta 5 tonos, con la menor sensibilidad. Es un tratamiento con el que se obtienen resultados de manera rápida y se consiguen unos cambios muy notables en la sonrisa.",
-  //     "pic" = "blanqueamientos.jpg",
-  //   ],
-  //   "diseño digital de la sonrisa" = [
-  //     "text" = "Es un tratamiento personalizado a partir de la utilización de un diagnóstico preliminar fotográfico y un software, que permite diseñar su sonrisa y ver el resultado final antes de comenzar el tratamiento, para mejorar la anatomía estética y color de tu sonrisa. De esta manera, nos aseguraremos de que te estamos ofreciendo la solución que mejor se adapta a sus necesidades.",
-  //     "pic" = "diseño digital de la sonrisa.jpg",
-  //   ],
-  //   "selladores de fosas y fisuras" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "tratamientos de conductos" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "brackets metálicos" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "brackets estéticos de porcelana" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "brackets estéticos de zafiro" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "alineadores invisibles SmileMakers®" = [
-  //     "text" = "lalal",
-  //     "pic" = "alineadores invisibles SmileMakers®.jpg",
-  //   ],
-  //   "alineadores keepsmiling" = [
-  //     "text" = "lalal",
-  //     "pic" = "alineadores keepsmiling.jpg",
-  //   ],
-  //   "alineadores invisiling" = [
-  //     "text" = "lalal",
-  //     "pic" = "alineadores invisiling.jpg",
+  treatmentsList : [
+    {
+      name:"caries",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "limpieza ultrasónica",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "exodoncias",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "blanqueamientos",
+      text : "La técnica de blanqueamiento combinado realizada en nuestro consultorio permite el clareamiento dental de hasta 5 tonos, con la menor sensibilidad. Es un tratamiento con el que se obtienen resultados de manera rápida y se consiguen unos cambios muy notables en la sonrisa.",
+      pic : "blanqueamientos.jpg",
+    },
+    {
+      name: "diseño digital de la sonrisa",
+      text : "Es un tratamiento personalizado a partir de la utilización de un diagnóstico preliminar fotográfico y un software, que permite diseñar su sonrisa y ver el resultado final antes de comenzar el tratamiento, para mejorar la anatomía estética y color de tu sonrisa. De esta manera, nos aseguraremos de que te estamos ofreciendo la solución que mejor se adapta a sus necesidades.",
+      pic : "diseño digital de la sonrisa.jpg",
+    },
+    {
+      name: "selladores de fosas y fisuras",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "tratamientos de conductos",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "brackets metálicos",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "brackets estéticos de porcelana",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "brackets estéticos de zafiro",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "alineadores invisibles SmileMakers®",
+      text : "lalal",
+      pic : "alineadores invisibles SmileMakers®.jpg",
+    },
+    {
+      name: "alineadores keepsmiling",
+      text : "lalal",
+      pic : "alineadores keepsmiling.jpg",
+    },
+    {
+      name: "alineadores invisiling",
+      text : "lalal",
+      pic : "alineadores invisiling.jpg",
 
-  //   ],
-  //   "prótesis removibles" = [
-  //     "text" = "lalal",
-  //     "pic" = "lolo",
-  //   ],
-  //   "prótesis fijas" = [
-  //     "text" = "lalal",
-  //     "pic" = "prótesis fijas.jpg",
-  //   ],
-  //   "carillas" = [
-  //     "text" = "lalal",
-  //     "pic" = "carillas.jpg",
-  //   ],
-  // ],
+    },
+    {
+      name: "prótesis removibles",
+      text : "lalal",
+      pic : "lolo",
+    },
+    {
+      name: "prótesis fijas",
+      text : "lalal",
+      pic : "prótesis fijas.jpg",
+    },
+    {
+      name: "carillas",
+      text : "lalal",
+      pic : "carillas.jpg",
+    },
+  ],
 
   specialties : [
     {

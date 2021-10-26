@@ -1,7 +1,7 @@
 import { categories } from '../../data'
 
 const Footer = () => {
-    console.log(process.env.REACT_APP_GOOGLE_API_KEY)
+
 return (
         <footer>
             <section id={categories[3]}>

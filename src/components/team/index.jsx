@@ -1,7 +1,41 @@
 import { categories, team } from '../../data'
+import { useEffect } from 'react'
+import $ from 'jquery'
+
 
 const Team = () => {
-return (
+
+    useEffect(() => {
+        // Team - carrusel
+        $('#teamOd').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            responsive: [{
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                    }
+                },
+            ]
+        });
+    }, [])
+
+    return (
     <section id={categories[2]}>
         <h4>Nuestro {categories[2]}</h4>
         <p className="container">Somos una Familia de Profesionales en busca de constante perfeccionamiento sumando

@@ -1,6 +1,23 @@
+import { useEffect } from 'react'
 import {carouselData} from '../../data'
+import $ from 'jquery'
 
 const CarouselHome = () => {
+
+    useEffect(() => {
+      //Responsive social-net
+      if (window.innerWidth > 768) {
+        $('#social-net a').each( function(index, value){
+          if ($(value).has('col-4')) {
+            $(value).removeClass('col-4')
+            $(value).addClass('col-2')
+            if (index == 0) {
+              $(value).addClass('offset-3')
+            }
+          }
+        })
+      }
+    }, [])
 
     return (
         <>

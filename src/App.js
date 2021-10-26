@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
+import 'slick-carousel/slick/slick';
 import './App.scss';
 
 
@@ -10,9 +11,8 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Bubble from './components/bubble';
 import CarouselHome from './components/carousel';
-import Specialties from './components/specialties';
-import Technology from './components/technology';
-import Team from './components/team';
+import Modals from './components/modals';
+import Main from './components/main';
 
 
 
@@ -27,14 +27,10 @@ function App() {
       
         <Header/>
         <CarouselHome/>
-        
-        <main className="container"> 
-          <Specialties/>
-          <Technology/>
-          <Team/>
-        </main>
-        
+        <Main/>        
         <Footer/>
+
+        <Modals/>
         <Bubble/>
       
       </BrowserRouter>

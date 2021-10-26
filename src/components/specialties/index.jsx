@@ -1,7 +1,15 @@
+import { useEffect } from 'react'
+import $ from 'jquery'
 import { categories, specialties } from '../../data'
 
 const Specialties = () => {
-return (
+
+    useEffect(() => {
+        // First Tab show - Specialties
+        $('#v-pills-tab:first-child a').first().tab('show')
+    }, [])
+
+    return (
         <section id={categories[0]}>
             <h4>{categories[0]}</h4>
             <h6>
@@ -47,7 +55,7 @@ return (
                 <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     {
                         specialties.map((el,index)=>
-                            <a key={el+index} className="btn btn-link  " id={`v-pills-${index}-tab`} data-toggle="pill" href={`#v-pills-${index}`} role="tab" aria-controls={`v-pills-${index}`} aria-selected="true">
+                            <a key={el+index} className={`btn btn-link`}   id={`v-pills-${index}-tab`} data-toggle="pill" href={`#v-pills-${index}`} role="tab" aria-controls={`v-pills-${index}`} aria-selected="true">
                                 {el.name}
                             </a>
                         )

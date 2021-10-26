@@ -1,6 +1,21 @@
+import { useEffect } from 'react'
 import { categories } from '../../data'
+import $ from 'jquery'
+
 
 const Header = () => {
+
+    useEffect(() => {
+        // Responsive show Nav Link
+        $('.nav-link-top').each(function(index, value) {
+            $(value).click(function (e) {
+            e.preventDefault()
+            $(window).scrollTop(($(value.hash)).offset().top - 80);
+            $('#navbarContent').collapse('hide')
+            });
+        });
+    }, [])
+
     return (
         <header className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <a className="navbar-brand col-8 col-md-4 col-lg-6 col-xl-5 offset-xl-1" href="#" id="logo-lbn">

@@ -1,6 +1,17 @@
 import { categories } from '../../data'
+import { useEffect } from 'react'
+import $ from 'jquery'
 
 const Technology = () => {
+
+    useEffect(() => {
+        $('#myTab a').each(function (index, value) {
+            $(value).click(function (e) {
+                $(window).scrollTop(($('#myTab')).offset().top - 80);
+            });
+        });
+    
+    }, [])
 return (
     <section id={categories[1]}>
         <h4>{categories[1]}</h4>

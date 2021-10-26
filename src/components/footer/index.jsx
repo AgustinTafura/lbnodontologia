@@ -1,6 +1,7 @@
 import { categories } from '../../data'
 
 const Footer = () => {
+    console.log(process.env.REACT_APP_GOOGLE_API_KEY)
 return (
         <footer>
             <section id={categories[3]}>
@@ -97,6 +98,7 @@ return (
                     </div>
                     <div id="map-google">
                         <iframe width="100%" height="220" frameBorder="0" style={{border:"0"}}
+                        
                             src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJozmiOnLKvJURe-7Uv1aODw0&key=${process.env.REACT_APP_GOOGLE_API_KEY}`}
                             allowFullScreen></iframe>
                     </div>

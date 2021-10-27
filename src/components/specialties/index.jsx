@@ -16,6 +16,51 @@ const Specialties = () => {
             Nuestro equipo está integrado por odontólogos especializados en todas las áreas, lo que nos permite ofrecerte una atención multidisciplinaria, asegurando que todas tus necesidades puedan ser atendidas en el mismo lugar.
             </h6>
             <div className="accordion" id="accordionSpecialities">
+                {
+                    specialties.map((sp,index)=>{
+
+                        <div className="card">
+                        <div className="card-header" id={`card-${sp.name}`}>
+                            <h5 className="mb-0">
+                            <button className="btn btn-link" type="button" data-toggle="collapse" data-target={`#collapse${sp.name}`} aria-expanded="true" aria-controls="collapseOne">
+                                {sp.name}
+                            </button>
+                            </h5>
+                        </div>
+        
+                        <div id={`collapse${sp.name}`} className="collapse" aria-labelledby="headingOne" data-parent="#accordionSpecialities">
+                            <div className="card-body">
+                            <p> {sp.text} </p>
+                            
+                            {
+                                (sp.treatments) && (
+
+                                    <div className="">
+                                    <div className="treatments">
+                                        Tratamientos:
+                                    </div>
+                                    <ul>
+                                        {
+                                            sp.treatments.map((tr,index)=>
+                                                <li key={tr+index} className="btn btn-link" type="button" data-toggle="modal" data-target="#treatmentsModal">{tr}</li>
+                                            )
+                                        }
+        
+                                    </ul>
+                                    </div>
+                                
+                                )
+
+                            }
+                            
+                            
+                            </div>
+                        </div>
+                        </div>
+
+                    })
+                }
+
             {/* @foreach ($specialties as $key => $value)
                 <div className="card">
                 <div className="card-header" id="card-{{$key}}">
